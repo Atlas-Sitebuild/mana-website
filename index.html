@@ -1,9 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mana Is Life</title>
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        body {
+            background: #000;
+        }
+
+        .page {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .background {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .mobile-image {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .desktop-image {
+                display: none;
+            }
+
+            .mobile-image {
+                display: block;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Coming Soon</h1>
+
+    <div class="page">
+
+        <img
+            class="background desktop-image"
+            src="desktop.jpg"
+            alt=""
+        >
+
+        <img
+            class="background mobile-image"
+            src="mobile.jpg"
+            alt=""
+        >
+
+    </div>
+
 </body>
 </html>
