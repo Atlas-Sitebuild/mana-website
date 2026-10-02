@@ -14,16 +14,13 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-        }
-
-        body {
             background: #000;
         }
 
         .page {
-            position: relative;
             width: 100vw;
             height: 100vh;
+            position: relative;
             overflow: hidden;
         }
 
@@ -33,6 +30,11 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            display: block;
+        }
+
+        .desktop-image {
+            display: block;
         }
 
         .mobile-image {
@@ -43,30 +45,28 @@
             .desktop-image {
                 display: none;
             }
-
             .mobile-image {
                 display: block;
             }
         }
     </style>
 </head>
-
 <body>
 
     <div class="page">
-
+        <!-- Desktop background -->
         <img
             class="background desktop-image"
             src="desktop.jpg"
             alt=""
         >
 
+        <!-- Mobile background -->
         <img
             class="background mobile-image"
             src="mobile.jpg"
             alt=""
         >
-
     </div>
 
 </body>
