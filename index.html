@@ -18,19 +18,20 @@
         }
 
         .page {
-            position: relative;
             width: 100vw;
             height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             overflow: hidden;
+            background: #000;
         }
 
         .background {
-            position: absolute;
-            inset: 0;
+            display: block;
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            display: block;
+            object-fit: contain;
         }
 
         .desktop-image {
@@ -45,28 +46,30 @@
             .desktop-image {
                 display: none;
             }
+
             .mobile-image {
                 display: block;
             }
         }
     </style>
 </head>
+
 <body>
 
     <div class="page">
-        <!-- Desktop background -->
+
         <img
             class="background desktop-image"
             src="desktop.jpg"
             alt=""
         >
 
-        <!-- Mobile background -->
         <img
             class="background mobile-image"
             src="mobile.jpg"
             alt=""
         >
+
     </div>
 
 </body>
